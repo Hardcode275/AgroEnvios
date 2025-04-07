@@ -1,8 +1,12 @@
 <script>
-    import Navbar from '../components/Navbar.svelte';
-    import Hero from '../components/Hero.svelte';
+    import Router from 'svelte-spa-router';
     import Footer from '../components/Footer.svelte';
+    import Hero from '../components/Hero.svelte';
+    import Navbar from '../components/Navbar.svelte';
+    import routes from './routes.js';
   </script>
+
+  <Router {routes} />
   
   <svelte:head>
     <title>Mi Página de Inicio</title>
